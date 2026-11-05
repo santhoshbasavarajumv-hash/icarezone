@@ -1,0 +1,7 @@
+{
+  "name": "iCareZone Mysore - Apple & Gadget Repair Center",
+  "description": "Premier Apple & gadget repair center in Kuvempunagar, Mysore. 30-min express iPhone screen & battery replacements, MacBook chip-level logic board repairs, and free doorstep pickup across Mysuru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --theme-bg: #ffffff;
+    --theme-surface: #ffffff;
+    --theme-surface-subtle: #f8fafc;
+    --theme-surface-dark: #0a0a0a;
+    --theme-border: #e2e8f0;
+    --theme-border-strong: #cbd5e1;
+    --theme-text-primary: #0a0a0a;
+    --theme-text-secondary: #334155;
+    --theme-text-muted: #64748b;
+    --theme-accent-red: #cf2117;
+    --theme-accent-red-hover: #b91c13;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--theme-bg);
+    color: var(--theme-text-primary);
+    -webkit-font-smoothing: antialiased;
+    selection-background-color: #0a0a0a;
+    selection-color: #ffffff;
+  }
+}
+
+/* White and Black Theme Utility Classes */
+.wb-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.wb-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wb-card:hover {
+  border-color: #0a0a0a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  transform: translateY(-2px);
+}
+
+.wb-card-subtle {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}
+
+.wb-card-dark {
+  background: #0a0a0a;
+  color: #ffffff;
+  border: 1px solid #262626;
+  border-radius: 16px;
+}
+
+.wb-btn-black {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: #0a0a0a;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #0a0a0a;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.wb-btn-black:hover {
+  background: #262626;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.wb-btn-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: #cf2117;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #cf2117;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.wb-btn-red:hover {
+  background: #b91c13;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(207, 33, 23, 0.25);
+}
+
+.wb-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0a0a0a;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #cbd5e1;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.wb-btn-outline:hover {
+  border-color: #0a0a0a;
+  background: #f8fafc;
+}
+
+.wb-badge-black {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: #0a0a0a;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wb-badge-red {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: rgba(207, 33, 23, 0.08);
+  border: 1px solid rgba(207, 33, 23, 0.25);
+  color: #cf2117;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wb-badge-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #0a0a0a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Subtle clean grid background for hero */
+.wb-hero-grid {
+  background-color: #ffffff;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(207, 33, 23, 0.05) 0%, transparent 60%),
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 48px 48px, 48px 48px;
+}
