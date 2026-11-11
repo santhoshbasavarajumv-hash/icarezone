@@ -1,0 +1,6 @@
+{
+  "name": "Apple Repair Experts – iCare zone",
+  "description": "Premium Apple device repair & appointment booking website in Mysuru, Karnataka. Professional iPhone, iPad, Mac, and Apple Watch repair services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
